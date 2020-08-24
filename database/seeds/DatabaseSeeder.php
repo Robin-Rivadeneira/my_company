@@ -498,6 +498,11 @@ class DatabaseSeeder extends Seeder
             'state_id' => 1,
         ]);
 
+        factory(App\Company::class)->create([
+            'code' => '1',
+            'trade_name' => 'Davivienda.',
+            'comercial_activity' => 'Venta de productos',
+        ]);
 
        // factory(App\User::class, 100)->create();
         factory(App\Models\JobBoard::class, 10)->create();
